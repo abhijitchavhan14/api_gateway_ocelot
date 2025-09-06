@@ -11,8 +11,21 @@
       ],
       "UpstreamPathTemplate": "/catalog/Products",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Products/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/catalog/Products/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ]
     }
   ],
+
   "GlobalConfiguration": {
     "BaseUrl": "http://localhost:5000"
   }
