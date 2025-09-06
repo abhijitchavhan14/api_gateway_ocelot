@@ -10,7 +10,7 @@
         }
       ],
       "UpstreamPathTemplate": "/catalog/Products",
-      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+      "UpstreamHttpMethod": [ "GET", "POST"]
     },
     {
       "DownstreamPathTemplate": "/api/Products/{id}",
